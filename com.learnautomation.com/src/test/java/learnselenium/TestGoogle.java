@@ -9,6 +9,7 @@ public class TestGoogle {
 	public void testGoogleTitle() {
 		WebDriver driver = new FirefoxDriver();
 		driver.get("http://www.google.com");
+		driver.manage().window().maximize();
 		System.out.println(driver.getTitle());
 		driver.quit();
 	}
